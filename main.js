@@ -45,3 +45,11 @@ function div() {
     result = num1 / num2;
     document.getElementById('out').innerHTML = result;
 }
+
+//nex section
+
+function oops() {
+    let p;
+    p = document.getElementById('out');
+    p.innerHTML = '';
+}

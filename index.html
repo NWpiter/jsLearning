@@ -6,6 +6,23 @@
     <title>Simply calc</title>
     <script src="main.js"></script>
 </head>
+<style>
+    .line {
+     text-align: center;
+     border-top: 1px dashed #000; 
+     height: 18px; 
+     background: url(scissors.png) no-repeat 10px -18px;
+    }
+    .line:after { 
+     content: "Линия отреза"; 
+     font-family: Arial, sans-serif; 
+     font-size: 12px;
+     vertical-align: top;
+    }
+    h2 {
+        color:coral;
+    }
+   </style>
 <body>
     <h1>Калькулятор - это легко!</h1>
     <p>Введите число1: <input type="text" id="n1"></p>
@@ -15,6 +32,9 @@
     <button onclick="minus()">Отнять</button>
     <button onclick="mult()">Умножить</button>
     <button onclick="div()">Разделить</button>
-    <h2 id="out">Результат</h2>
+    <h2 id="out">Результат будет тут:</h2><br>
+    <div class="line"></div>
+    <p id="oops">очистить результат</p>
+    <button onclick="oops()">Дави!</button>
 </body>
 </html>
