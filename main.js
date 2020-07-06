@@ -49,7 +49,14 @@ function div() {
 //nex section
 
 function oops() {
-    let p;
+    let p,x;
     p = document.getElementById('out');
     p.innerHTML = '';
+
+    x = document.getElementById('oops');
+    // x.insertAdjacentHTML('beforeBegin', 'Быстро');  
+    // x.insertAdjacentHTML('afterBegin', 'Быстро ')
+    // x.insertAdjacentHTML('beforeEnd', ' Быстро ');
+    // x.insertAdjacentHTML('afterEnd', ' Быстро ');
+    x.outerHTML = '<div class="barbos">Получилось!</div>';
 }
