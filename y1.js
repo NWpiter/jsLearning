@@ -21,3 +21,11 @@ function f1() {
     out.innerHTML = "Число должно быть больше!";
   }
 }
+
+function f2() {
+  let p;
+  p = document.getElementById("bam");
+  for (let i=1; i<=100; i++) {
+    p.innerHTML += i + ' ';
+  }
+}
